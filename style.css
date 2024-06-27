@@ -1,9 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* HOME */
 .home{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url("./Background1.png");
+    background-image: linear-gradient(to right, #f8f5f8, #fffec0);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,26 +19,32 @@
     justify-content: space-between;
     padding: 1rem;
     width: 90%;
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #e40cff, #7e00d1) border-box;
+    /* background: linear-gradient(white, white) padding-box, linear-gradient(to right, #e40cff, #7e00d1) border-box; */
     border: 3px solid transparent;
     border-radius: 10rem;
     margin: auto;
     margin-bottom: 1rem;
     box-sizing: content-box;
+    align-items: center;
 }
-
+.navbar a{
+    /* color: white; */
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
 .link{
-    background-color: white;
+    /* background-color: white; */
     border: none;
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
 }
 
 .logo{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: 'Poppins', serif;
     font-weight: bold;
     letter-spacing: 2px;
+    /* filter: invert(100%); */
 }
 
 /* NAVBAR END */
@@ -43,7 +54,8 @@
     display: flex;
     width: 90%;
     margin: auto;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center
 }
 .main_text{
@@ -56,11 +68,63 @@
 .main_image{
     display: flex;
     justify-content: center;
-    width: 50%;
+    align-items: end;
+    margin-top: 6rem;
+    /* width: 50%; */
+    /* animation: fade 3s ease-in-out; */
 }
 .main_image img{
-    height: 600px;
+    height: 500px;
+    animation: fade 5s ease-in-out;
+    animation-iteration-count: infinite;
 }
+@keyframes fade {
+    0% {opacity: 100%;}
+    25% {opacity: 50%;}
+    50% {opacity: 0%;}
+    75% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+  }
+  
+  .cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 180px;
+    border: 6px solid #262626;
+    border-top: 6px solid #000;
+    border-radius: 15px;
+    background: url(https://image.ibb.co/fmHm66/wave.png);
+    background-position: 0px 350px;
+    background-repeat: repeat-x;
+    animation: filling 6s ease-in-out infinite;
+    box-shadow:0 10px 15px rgba(0,0,0,1);
+  }
+  
+  .cup:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border: 6px solid #000;
+    right: 35px;
+    top: -52px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  @keyframes filling {
+    50% {background-position: 3000px 0px;}
+    100% {background-position: 6000px 350px;}
+  }
 /* MAIN END */
 
 /* HOME END */
