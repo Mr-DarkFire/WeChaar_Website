@@ -2,18 +2,20 @@ gsap.from(".navbar",{
   opacity:0,
   y: "1vh",
   scale: .95,
-  duration: .8,
+  duration: .5,
   delay: .2, 
     
 })
 gsap.from("#thumbnail-slider",{
-  opacity:0,
-  y: "50vh",
-  scale: .70,
-  duration: .8,
-  delay: .2, 
-    
+  opacity: 0,
+  y: "70vh",
+  scale: 0,
+  duration: 1.8,
+  delay: .2,  
+
+
 })
+
 
 
     var thumbnailSliderOptions = {
