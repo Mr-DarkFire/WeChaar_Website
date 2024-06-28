@@ -33,12 +33,12 @@ html, body{
 .icon i{
     font-size: 24px;
     cursor: pointer;
-    transition: .2s ease-in-out;
+    transition: .2s ease-in;
 }
 .icon i:hover{
-    scale: 1.1;
+    scale: 1.2;
     cursor: pointer;
-    transition: .2s ease-in-out;
+    transition: .2s ease-in;
 }
 .icon input{
     width: 160px;
@@ -60,85 +60,11 @@ html, body{
     width: 100vw;
     object-fit: cover;  
 }
-.section1 img{
+.section{
+    background-image: url(https://images.unsplash.com/photo-1558346648-9757f2fa4474?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     height: 100vh;
-    width: 100vw;
 }
 
-
-/* Section! Banner */
-.slider .item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.img-wrapper {
-    position: absolute;
-    top: 20%;
-    left: 60%;
-}
-.img>img{
-    width: 90%;
-    /* transform: translate(-90px); */
-}
-.slider .item .img {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-}
-/* .slider .item .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-} */
-.slider .item .content {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15rem;
-}
-.slider .item .content .wrap {
-    font-family: "Neue World Condensed Light";
-    font-weight: 300;
-    letter-spacing: -10px;
-    text-align: center;
-    max-width: 900px;
-}
-.slider .item .content .wrap .letter {
-    display: inline-block;
-}
-.slider .nav .next, .slider .nav .prev {
-    position: absolute;
-    height: 2rem;
-    width: 21em;
-    top: calc(50% 1rem);
-    stroke: #a89a54;
-    cursor: pointer;
-    z-index: 3;
-}
-.slider .nav .next {
-    right: 4rem;
-    transform: scale (2) rotate(180deg);
-    }
-    .slider .nav .prev {
-    left: 4rem;
-    transform: scale(2);
-}
-.slider .nav .prev {
-    left: 4rem;
-    transform: scale (2);
-}
-    .slider .item:not(.is-active) {
-    opacity: 0;
-    pointer-events: none;
-}
 
 /* ------------------------------------------------------------ */
 
@@ -146,8 +72,11 @@ html, body{
 
 #thumbnail-slider {
     margin:0 auto; /*center-aligned*/
+    margin-top: 80px;
     width:100%;
-    max-width:900px;
+    background-color: red;
+    /* height: 200px; */
+    max-width: 1000px;
     padding:0;
     box-sizing:border-box;
     position:relative;
@@ -245,3 +174,4 @@ html, body{
 
 #thumbnail-slider-pause-play {display:none;} /*.pause*/
 #thumbnail-slider-prev, #thumbnail-slider-next {display:none;}
+
